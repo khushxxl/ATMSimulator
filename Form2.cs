@@ -28,6 +28,10 @@ namespace ATMSimulator
             this.atmProgram = program;
             InitializeComponent();
             this.isRace = isRace;
+            foreach (Account acc in atmProgram.getAllAccounts())
+            {
+                Console.WriteLine(acc.getAccountNum());
+            }
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -121,9 +125,9 @@ namespace ATMSimulator
         private void button2_Click(object sender, EventArgs e)
         {
           if(withdrawPanel.Visible == true)
-            {
+           {
                 withdrawPanel.Visible = false;
-            }
+           }
           
             
            if (withdrawPanel.Visible == false)

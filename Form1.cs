@@ -22,8 +22,10 @@ namespace ATMSimulator
             this.isRace = isRace;
             if(isRace == true)
             {
+
                 racebutton.Text = "Run Race Condition";
                 raceBox.Text = "Application with Race Condition";
+             
 
             }
             else
@@ -52,7 +54,7 @@ namespace ATMSimulator
         {
 
             ATMProgram atm = new ATMProgram();
-            Account[] ac = atm.getAllAccounts();
+           
 
             // Define the number of threads you want to create
             int numThreads = 2;
@@ -73,30 +75,106 @@ namespace ATMSimulator
         {
             this.Close();
         }
+
+
+        int randomNumber;
+        private int generateRandomNumber()
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(100000, 1000000);
+            return randomNumber; 
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            string userInputPin = pinSetBox.Text;
+            accountPanel.Visible = true;
+
+            randomNumber = generateRandomNumber();
+
+            accSetBox.Text = randomNumber.ToString();
+
+         }
+
+        private void registerButton_Click(object sender, EventArgs e)
+        {
+            int userPin;
+            string userInputPin = pinSetBox.Text;
+
+            ATMProgram helperProgram = new ATMProgram();
+
+            List<Account> accounts = helperProgram.getAllAccounts();
+
+          
+
+
+            if (!int.TryParse(userInputPin, out userPin))
+            {
+                accountLabel.Text = "Enter a valid pin of 6 digits";
+                return;
+            }
+
+            if (userPin.ToString().Length != 6)
+            {
+                accountLabel.Text = "Enter a valid pin of 6 digits";
+                return;
+            }
+            else
+            {
+                helperProgram.addAccount((new Account(3000, userPin, randomNumber)));
+                accountLabel.Text = "Account Created with 3000 pounds";
+                return;
+              
+                
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            accountPanel.Visible = false;
+        }
     }
 
 
 
     public  class ATMProgram
     {
-        private Account[] ac = new Account[3];
+       // private Account[] ac = new Account[3];
+
+        List<Account> accounts = new List<Account>();   
+
+
 
         
 
 
         public ATMProgram()
         {
-            ac[0] = new Account(300, 1111, 111111);
-            ac[1] = new Account(750, 2222, 222222);
-            ac[2] = new Account(3000, 3333, 333333);
+           // ac[0] = new Account(300, 1111, 111111);
+          //  ac[1] = new Account(750, 2222, 222222);
+          //  ac[2] = new Account(3000, 3333, 333333);
+
+            accounts.Add(new Account(300, 1111, 111111));
+            accounts.Add(new Account(750, 2222, 222222));
+
+            accounts.Add(new Account(3000, 3333, 333333));
+
+
+
 
 
 
         }
 
-        public Account[] getAllAccounts()
+        public List<Account> getAllAccounts()
         {
-            return ac;
+            return accounts;
+        }
+
+        public void addAccount(Account account)
+        {
+            accounts.Add(account);
         }
 
 
@@ -105,11 +183,11 @@ namespace ATMSimulator
         {
            
 
-            for (int i = 0; i < this.ac.Length; i++)
+            for (int i = 0; i < this.accounts.Count(); i++)
             {
-                if (ac[i].getAccountNum() == accountNum)
+                if (accounts[i].getAccountNum() == accountNum)
                 {
-                    return ac[i];
+                    return accounts[i];
                 }
             }
 
