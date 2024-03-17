@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SimulatorOptions));
-            this.accountNumberBox = new System.Windows.Forms.TextBox();
+            this.txtBoxAccountNumber = new System.Windows.Forms.TextBox();
             this.accountDetailsPanel = new System.Windows.Forms.Panel();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.lblPin = new System.Windows.Forms.Label();
-            this.pinNumberBox = new System.Windows.Forms.TextBox();
+            this.txtBoxPinNumber = new System.Windows.Forms.TextBox();
             this.lblAccountNumber = new System.Windows.Forms.Label();
             this.txtboxEnterDetails = new System.Windows.Forms.TextBox();
             this.txtboxBankingOptions = new System.Windows.Forms.TextBox();
@@ -56,12 +56,12 @@
             // 
             // accountNumberBox
             // 
-            this.accountNumberBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accountNumberBox.Location = new System.Drawing.Point(406, 273);
-            this.accountNumberBox.Margin = new System.Windows.Forms.Padding(6);
-            this.accountNumberBox.Name = "accountNumberBox";
-            this.accountNumberBox.Size = new System.Drawing.Size(572, 61);
-            this.accountNumberBox.TabIndex = 1;
+            this.txtBoxAccountNumber.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxAccountNumber.Location = new System.Drawing.Point(406, 273);
+            this.txtBoxAccountNumber.Margin = new System.Windows.Forms.Padding(6);
+            this.txtBoxAccountNumber.Name = "accountNumberBox";
+            this.txtBoxAccountNumber.Size = new System.Drawing.Size(572, 61);
+            this.txtBoxAccountNumber.TabIndex = 1;
             // 
             // accountDetailsPanel
             // 
@@ -69,10 +69,10 @@
             this.accountDetailsPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.accountDetailsPanel.Controls.Add(this.btnSubmit);
             this.accountDetailsPanel.Controls.Add(this.lblPin);
-            this.accountDetailsPanel.Controls.Add(this.pinNumberBox);
+            this.accountDetailsPanel.Controls.Add(this.txtBoxPinNumber);
             this.accountDetailsPanel.Controls.Add(this.lblAccountNumber);
             this.accountDetailsPanel.Controls.Add(this.txtboxEnterDetails);
-            this.accountDetailsPanel.Controls.Add(this.accountNumberBox);
+            this.accountDetailsPanel.Controls.Add(this.txtBoxAccountNumber);
             this.accountDetailsPanel.ForeColor = System.Drawing.Color.Crimson;
             this.accountDetailsPanel.Location = new System.Drawing.Point(134, 85);
             this.accountDetailsPanel.Margin = new System.Windows.Forms.Padding(6);
@@ -104,14 +104,15 @@
             this.lblPin.TabIndex = 4;
             this.lblPin.Text = "Enter Account PIN";
             // 
-            // pinNumberBox
+            // txtBoxPinNumber
             // 
-            this.pinNumberBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pinNumberBox.Location = new System.Drawing.Point(406, 398);
-            this.pinNumberBox.Margin = new System.Windows.Forms.Padding(6);
-            this.pinNumberBox.Name = "pinNumberBox";
-            this.pinNumberBox.Size = new System.Drawing.Size(572, 61);
-            this.pinNumberBox.TabIndex = 3;
+            this.txtBoxPinNumber.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxPinNumber.Location = new System.Drawing.Point(406, 398);
+            this.txtBoxPinNumber.Margin = new System.Windows.Forms.Padding(6);
+            this.txtBoxPinNumber.Name = "txtBoxPinNumber";
+            this.txtBoxPinNumber.Size = new System.Drawing.Size(572, 61);
+            this.txtBoxPinNumber.TabIndex = 3;
+            this.txtBoxPinNumber.PasswordChar = '*';
             // 
             // lblAccountNumber
             // 
@@ -132,11 +133,11 @@
             this.txtboxEnterDetails.Location = new System.Drawing.Point(444, 48);
             this.txtboxEnterDetails.Margin = new System.Windows.Forms.Padding(6);
             this.txtboxEnterDetails.Name = "txtboxEnterDetails";
+            this.txtboxEnterDetails.ReadOnly = true;
             this.txtboxEnterDetails.Size = new System.Drawing.Size(502, 61);
             this.txtboxEnterDetails.TabIndex = 0;
             this.txtboxEnterDetails.Text = "Enter your Details";
             this.txtboxEnterDetails.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtboxEnterDetails.ReadOnly = true;
             // 
             // txtboxBankingOptions
             // 
@@ -144,11 +145,11 @@
             this.txtboxBankingOptions.Location = new System.Drawing.Point(476, 48);
             this.txtboxBankingOptions.Margin = new System.Windows.Forms.Padding(6);
             this.txtboxBankingOptions.Name = "txtboxBankingOptions";
+            this.txtboxBankingOptions.ReadOnly = true;
             this.txtboxBankingOptions.Size = new System.Drawing.Size(502, 61);
             this.txtboxBankingOptions.TabIndex = 0;
             this.txtboxBankingOptions.Text = "Banking Options";
             this.txtboxBankingOptions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtboxBankingOptions.ReadOnly = true;
             // 
             // btnWithdraw
             // 
@@ -173,6 +174,7 @@
             this.btnReturnCard.TabIndex = 3;
             this.btnReturnCard.Text = "Return Card";
             this.btnReturnCard.UseVisualStyleBackColor = true;
+            this.btnReturnCard.Click += new System.EventHandler(this.btnReturnCardClick);
             // 
             // textboxBalance
             // 
@@ -321,12 +323,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox accountNumberBox;
+        private System.Windows.Forms.TextBox txtBoxAccountNumber;
         private System.Windows.Forms.Panel accountDetailsPanel;
         private System.Windows.Forms.TextBox txtboxEnterDetails;
         private System.Windows.Forms.Label lblAccountNumber;
         private System.Windows.Forms.Label lblPin;
-        private System.Windows.Forms.TextBox pinNumberBox;
+        private System.Windows.Forms.TextBox txtBoxPinNumber;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.TextBox txtboxBankingOptions;
         private System.Windows.Forms.Button btnWithdraw;

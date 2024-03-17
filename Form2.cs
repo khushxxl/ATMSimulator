@@ -113,8 +113,8 @@ namespace ATMSimulator
             int userAccNum;
             int userAccPin;
 
-            string inputUserAccNum = accountNumberBox.Text;
-            string inputUserAccPin = pinNumberBox.Text;
+            string inputUserAccNum = txtBoxAccountNumber.Text;
+            string inputUserAccPin = txtBoxPinNumber.Text;
 
             if(string.IsNullOrEmpty(inputUserAccNum) || string.IsNullOrEmpty(inputUserAccPin))
             {
@@ -149,6 +149,14 @@ namespace ATMSimulator
             {
                 txtboxEnterDetails.Text = "* Incorrect Details *";
             }
+        }
+
+        private void btnReturnCardClick(object sender, EventArgs e)
+        {
+            bankOptionsPanel.Visible = false;
+            accountDetailsPanel.Visible= true;
+            txtBoxAccountNumber.Text = "";
+            txtBoxPinNumber.Text = "";
         }
     }
 }
