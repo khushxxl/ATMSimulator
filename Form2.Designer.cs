@@ -54,12 +54,12 @@
             this.bankOptionsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // accountNumberBox
+            // txtBoxAccountNumber
             // 
             this.txtBoxAccountNumber.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxAccountNumber.Location = new System.Drawing.Point(406, 273);
             this.txtBoxAccountNumber.Margin = new System.Windows.Forms.Padding(6);
-            this.txtBoxAccountNumber.Name = "accountNumberBox";
+            this.txtBoxAccountNumber.Name = "txtBoxAccountNumber";
             this.txtBoxAccountNumber.Size = new System.Drawing.Size(572, 61);
             this.txtBoxAccountNumber.TabIndex = 1;
             // 
@@ -110,9 +110,9 @@
             this.txtBoxPinNumber.Location = new System.Drawing.Point(406, 398);
             this.txtBoxPinNumber.Margin = new System.Windows.Forms.Padding(6);
             this.txtBoxPinNumber.Name = "txtBoxPinNumber";
+            this.txtBoxPinNumber.PasswordChar = '*';
             this.txtBoxPinNumber.Size = new System.Drawing.Size(572, 61);
             this.txtBoxPinNumber.TabIndex = 3;
-            this.txtBoxPinNumber.PasswordChar = '*';
             // 
             // lblAccountNumber
             // 
@@ -277,7 +277,8 @@
             // 
             // bankOptionsPanel
             // 
-            this.bankOptionsPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bankOptionsPanel.BackgroundImage")));
+            this.bankOptionsPanel.BackgroundImage = global::ATMSimulator.Properties.Resources.Gotham;
+            this.bankOptionsPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bankOptionsPanel.Controls.Add(this.lblLastTransaction);
             this.bankOptionsPanel.Controls.Add(this.withdrawPanel);
             this.bankOptionsPanel.Controls.Add(this.textboxBalance);
@@ -307,7 +308,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::ATMSimulator.Properties.Resources.Gotham;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1600, 865);
             this.Controls.Add(this.bankOptionsPanel);
             this.Controls.Add(this.accountDetailsPanel);

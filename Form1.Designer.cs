@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnRaceCondition = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.raceBox = new System.Windows.Forms.Label();
@@ -115,7 +114,8 @@
             // 
             // accountPanel
             // 
-            this.accountPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("accountPanel.BackgroundImage")));
+            this.accountPanel.BackgroundImage = global::ATMSimulator.Properties.Resources.Gotham;
+            this.accountPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.accountPanel.Controls.Add(this.btnBack);
             this.accountPanel.Controls.Add(this.btnRegister);
             this.accountPanel.Controls.Add(this.lblPin);
@@ -214,7 +214,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::ATMSimulator.Properties.Resources.Gotham;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1600, 865);
             this.Controls.Add(this.accountPanel);
             this.Controls.Add(this.btnOpenAccount);
