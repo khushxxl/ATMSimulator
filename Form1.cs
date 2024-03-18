@@ -19,6 +19,8 @@ namespace ATMSimulator
         public Form1(bool isRace)
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(isRace? this.Location.X + this.Size.Width : this.Location.X, this.Location.Y);
             this.isRace = isRace;
             if(isRace == true)
             {
