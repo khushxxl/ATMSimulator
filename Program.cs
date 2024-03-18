@@ -17,9 +17,6 @@ namespace ATMSimulator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-
-
             Thread threadRaceForm = new Thread(() =>
             {
                 Application.Run((new Form1(true)));
