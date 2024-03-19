@@ -26,12 +26,11 @@ namespace ATMSimulator
 
         public int getBalance() => this.balance;
 
-        public bool decrementBalance(int amount) => this.balance >= amount;
+        public bool canDecrementBalance(int amount) => this.balance >= amount;
 
         public bool checkPin(int pinEntered) => this.pin == pinEntered;
 
         public int getAccountNum() => accountNum;
-
 
     }
 }

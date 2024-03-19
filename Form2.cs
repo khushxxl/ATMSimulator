@@ -39,7 +39,7 @@ namespace ATMSimulator
 
             if (isRace)
             {
-                if (userAccount.decrementBalance(amt))
+                if (userAccount.canDecrementBalance(amt))
                 {
                     int balance = userAccount.getBalance();
                     balance -= amt;
@@ -53,7 +53,7 @@ namespace ATMSimulator
             else
             {
                 useMutex.WaitOne();
-                if (userAccount.decrementBalance(amt))
+                if (userAccount.canDecrementBalance(amt))
                 {
                     try
                     {
@@ -69,6 +69,43 @@ namespace ATMSimulator
                         useMutex.ReleaseMutex();
                     }
                 }
+
+            }
+
+        }
+
+        private void deposit(int amt)
+        {
+            lblLastTransaction.Text = "Last Transaction : Deposited " + amt;
+            withdrawPanel.Visible = false;
+            Thread.Sleep(2000);
+
+            if (isRace)
+            {
+                    int balance = userAccount.getBalance();
+                    balance += amt;
+                    Thread.Sleep(2000);
+                    userAccount.setBalance(balance);
+                    textboxBalance.Text = "Current Balance:  " + userAccount.getBalance().ToString();
+                    lblLastTransaction.Visible = false;
+            }
+
+            else
+            {
+                useMutex.WaitOne();
+                try
+                {
+                    int balance = userAccount.getBalance();
+                    balance += amt;
+                    Thread.Sleep(2000);
+                    userAccount.setBalance(balance);
+                    textboxBalance.Text = "Current Balance:  " + userAccount.getBalance().ToString();
+                }
+                finally
+                {
+                    useMutex.ReleaseMutex();
+                }
+                
 
             }
 
@@ -107,6 +144,8 @@ namespace ATMSimulator
         {
             deductAccountBalance(500);
         }
+
+  
 
         private void btnSubmitClick(object sender, EventArgs e)
         {
