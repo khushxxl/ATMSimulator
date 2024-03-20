@@ -49,10 +49,9 @@
             this.btnRaceCondition.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRaceCondition.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRaceCondition.ForeColor = System.Drawing.Color.White;
-            this.btnRaceCondition.Location = new System.Drawing.Point(190, 333);
-            this.btnRaceCondition.Margin = new System.Windows.Forms.Padding(6);
+            this.btnRaceCondition.Location = new System.Drawing.Point(95, 173);
             this.btnRaceCondition.Name = "btnRaceCondition";
-            this.btnRaceCondition.Size = new System.Drawing.Size(518, 102);
+            this.btnRaceCondition.Size = new System.Drawing.Size(259, 53);
             this.btnRaceCondition.TabIndex = 1;
             this.btnRaceCondition.Text = "Run Race Condition";
             this.btnRaceCondition.UseVisualStyleBackColor = false;
@@ -63,10 +62,9 @@
             this.buttonExit.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonExit.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.ForeColor = System.Drawing.Color.White;
-            this.buttonExit.Location = new System.Drawing.Point(960, 333);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(6);
+            this.buttonExit.Location = new System.Drawing.Point(480, 173);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(518, 102);
+            this.buttonExit.Size = new System.Drawing.Size(259, 53);
             this.buttonExit.TabIndex = 2;
             this.buttonExit.Text = "Exit";
             this.buttonExit.UseVisualStyleBackColor = false;
@@ -78,10 +76,9 @@
             this.raceBox.BackColor = System.Drawing.Color.Transparent;
             this.raceBox.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.raceBox.ForeColor = System.Drawing.SystemColors.Control;
-            this.raceBox.Location = new System.Drawing.Point(600, 771);
-            this.raceBox.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.raceBox.Location = new System.Drawing.Point(300, 401);
             this.raceBox.Name = "raceBox";
-            this.raceBox.Size = new System.Drawing.Size(493, 46);
+            this.raceBox.Size = new System.Drawing.Size(241, 23);
             this.raceBox.TabIndex = 3;
             this.raceBox.Text = "Application with Race Condition";
             // 
@@ -91,10 +88,9 @@
             this.lblBankOfDundee.BackColor = System.Drawing.Color.Transparent;
             this.lblBankOfDundee.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBankOfDundee.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.lblBankOfDundee.Location = new System.Drawing.Point(554, 54);
-            this.lblBankOfDundee.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblBankOfDundee.Location = new System.Drawing.Point(277, 28);
             this.lblBankOfDundee.Name = "lblBankOfDundee";
-            this.lblBankOfDundee.Size = new System.Drawing.Size(520, 75);
+            this.lblBankOfDundee.Size = new System.Drawing.Size(258, 37);
             this.lblBankOfDundee.TabIndex = 4;
             this.lblBankOfDundee.Text = "Bank of Dundee";
             // 
@@ -103,10 +99,9 @@
             this.btnOpenAccount.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnOpenAccount.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpenAccount.ForeColor = System.Drawing.Color.White;
-            this.btnOpenAccount.Location = new System.Drawing.Point(564, 488);
-            this.btnOpenAccount.Margin = new System.Windows.Forms.Padding(6);
+            this.btnOpenAccount.Location = new System.Drawing.Point(282, 254);
             this.btnOpenAccount.Name = "btnOpenAccount";
-            this.btnOpenAccount.Size = new System.Drawing.Size(518, 102);
+            this.btnOpenAccount.Size = new System.Drawing.Size(259, 53);
             this.btnOpenAccount.TabIndex = 5;
             this.btnOpenAccount.Text = "Open an Account";
             this.btnOpenAccount.UseVisualStyleBackColor = false;
@@ -123,10 +118,9 @@
             this.accountPanel.Controls.Add(this.pinSetBox);
             this.accountPanel.Controls.Add(this.accSetBox);
             this.accountPanel.Controls.Add(this.lblOpenAccount);
-            this.accountPanel.Location = new System.Drawing.Point(130, 165);
-            this.accountPanel.Margin = new System.Windows.Forms.Padding(6);
+            this.accountPanel.Location = new System.Drawing.Point(65, 86);
             this.accountPanel.Name = "accountPanel";
-            this.accountPanel.Size = new System.Drawing.Size(1348, 650);
+            this.accountPanel.Size = new System.Drawing.Size(674, 338);
             this.accountPanel.TabIndex = 6;
             this.accountPanel.Visible = false;
             // 
@@ -134,10 +128,9 @@
             // 
             this.btnBack.BackColor = System.Drawing.Color.Black;
             this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBack.Location = new System.Drawing.Point(24, 40);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(6);
+            this.btnBack.Location = new System.Drawing.Point(12, 21);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(150, 44);
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 13;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -145,10 +138,9 @@
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(478, 581);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(6);
+            this.btnRegister.Location = new System.Drawing.Point(255, 302);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(326, 44);
+            this.btnRegister.Size = new System.Drawing.Size(163, 23);
             this.btnRegister.TabIndex = 12;
             this.btnRegister.Text = "Complete Registeration";
             this.btnRegister.UseVisualStyleBackColor = true;
@@ -160,10 +152,9 @@
             this.lblPin.BackColor = System.Drawing.Color.Transparent;
             this.lblPin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPin.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblPin.Location = new System.Drawing.Point(72, 365);
-            this.lblPin.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblPin.Location = new System.Drawing.Point(36, 190);
             this.lblPin.Name = "lblPin";
-            this.lblPin.Size = new System.Drawing.Size(125, 37);
+            this.lblPin.Size = new System.Drawing.Size(63, 19);
             this.lblPin.TabIndex = 11;
             this.lblPin.Text = "Set Pin";
             // 
@@ -173,28 +164,26 @@
             this.lblAccountNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblAccountNumber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAccountNumber.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAccountNumber.Location = new System.Drawing.Point(72, 273);
-            this.lblAccountNumber.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblAccountNumber.Location = new System.Drawing.Point(36, 142);
             this.lblAccountNumber.Name = "lblAccountNumber";
-            this.lblAccountNumber.Size = new System.Drawing.Size(375, 37);
+            this.lblAccountNumber.Size = new System.Drawing.Size(188, 19);
             this.lblAccountNumber.TabIndex = 10;
             this.lblAccountNumber.Text = "Account Number (Auto)";
             // 
             // pinSetBox
             // 
-            this.pinSetBox.Location = new System.Drawing.Point(460, 363);
-            this.pinSetBox.Margin = new System.Windows.Forms.Padding(6);
+            this.pinSetBox.Location = new System.Drawing.Point(230, 189);
             this.pinSetBox.Name = "pinSetBox";
-            this.pinSetBox.Size = new System.Drawing.Size(418, 31);
+            this.pinSetBox.Size = new System.Drawing.Size(211, 20);
             this.pinSetBox.TabIndex = 9;
+            this.pinSetBox.TextChanged += new System.EventHandler(this.pinSetBox_TextChanged);
             // 
             // accSetBox
             // 
             this.accSetBox.Enabled = false;
-            this.accSetBox.Location = new System.Drawing.Point(460, 273);
-            this.accSetBox.Margin = new System.Windows.Forms.Padding(6);
+            this.accSetBox.Location = new System.Drawing.Point(230, 142);
             this.accSetBox.Name = "accSetBox";
-            this.accSetBox.Size = new System.Drawing.Size(418, 31);
+            this.accSetBox.Size = new System.Drawing.Size(211, 20);
             this.accSetBox.TabIndex = 8;
             // 
             // lblOpenAccount
@@ -203,20 +192,19 @@
             this.lblOpenAccount.BackColor = System.Drawing.Color.Transparent;
             this.lblOpenAccount.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOpenAccount.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.lblOpenAccount.Location = new System.Drawing.Point(272, 90);
-            this.lblOpenAccount.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblOpenAccount.Location = new System.Drawing.Point(142, 47);
             this.lblOpenAccount.Name = "lblOpenAccount";
-            this.lblOpenAccount.Size = new System.Drawing.Size(800, 75);
+            this.lblOpenAccount.Size = new System.Drawing.Size(398, 37);
             this.lblOpenAccount.TabIndex = 7;
             this.lblOpenAccount.Text = "Open an Account with us";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ATMSimulator.Properties.Resources.Gotham;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.ClientSize = new System.Drawing.Size(831, 448);
             this.Controls.Add(this.accountPanel);
             this.Controls.Add(this.btnOpenAccount);
             this.Controls.Add(this.lblBankOfDundee);
@@ -224,7 +212,6 @@
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.btnRaceCondition);
             this.Location = new System.Drawing.Point(20, 30);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Bank of Dundee";

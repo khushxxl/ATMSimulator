@@ -8,13 +8,17 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows;
 
 
 namespace ATMSimulator
 {
     public partial class Form1 : Form
     {
+
+        
         bool isRace;
+
 
         public Form1(bool isRace)
         {
@@ -59,6 +63,8 @@ namespace ATMSimulator
             this.Close();
         }
 
+        int randomNumber;
+
         private int generateRandomNumber()
         {
             Random random = new Random();
@@ -70,7 +76,8 @@ namespace ATMSimulator
         {
             string userInputPin = pinSetBox.Text;
             accountPanel.Visible = true;
-            accSetBox.Text = generateRandomNumber().ToString();
+            randomNumber = generateRandomNumber();
+            accSetBox.Text = randomNumber.ToString();
 
          }
 
@@ -89,14 +96,14 @@ namespace ATMSimulator
                 return;
             }
 
-            if (userPin.ToString().Length != 6)
+            if (userPin.ToString().Length != 4)
             {
-                lblOpenAccount.Text = "Enter a valid pin of 6 digits";
+                lblOpenAccount.Text = "Enter a valid pin of 4 digits";
                 return;
             }
             else
             {
-                helperProgram.addAccount((new Account(3000, userPin, generateRandomNumber())));
+                helperProgram.addAccount((new Account(3000, userPin,randomNumber)));
                 lblOpenAccount.Text = "Account Created with 3000 pounds";
                 return;
               
@@ -108,6 +115,13 @@ namespace ATMSimulator
         {
             accountPanel.Visible = false;
         }
+
+        private void pinSetBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 
 }

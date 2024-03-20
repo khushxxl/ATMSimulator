@@ -158,5 +158,10 @@ namespace ATMSimulator
             txtBoxAccountNumber.Text = "";
             txtBoxPinNumber.Text = "";
         }
+
+        private void withdrawPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -57,10 +57,9 @@
             // txtBoxAccountNumber
             // 
             this.txtBoxAccountNumber.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxAccountNumber.Location = new System.Drawing.Point(406, 273);
-            this.txtBoxAccountNumber.Margin = new System.Windows.Forms.Padding(6);
+            this.txtBoxAccountNumber.Location = new System.Drawing.Point(203, 142);
             this.txtBoxAccountNumber.Name = "txtBoxAccountNumber";
-            this.txtBoxAccountNumber.Size = new System.Drawing.Size(572, 61);
+            this.txtBoxAccountNumber.Size = new System.Drawing.Size(288, 34);
             this.txtBoxAccountNumber.TabIndex = 1;
             // 
             // accountDetailsPanel
@@ -74,18 +73,16 @@
             this.accountDetailsPanel.Controls.Add(this.txtboxEnterDetails);
             this.accountDetailsPanel.Controls.Add(this.txtBoxAccountNumber);
             this.accountDetailsPanel.ForeColor = System.Drawing.Color.Crimson;
-            this.accountDetailsPanel.Location = new System.Drawing.Point(134, 85);
-            this.accountDetailsPanel.Margin = new System.Windows.Forms.Padding(6);
+            this.accountDetailsPanel.Location = new System.Drawing.Point(57, 37);
             this.accountDetailsPanel.Name = "accountDetailsPanel";
-            this.accountDetailsPanel.Size = new System.Drawing.Size(1336, 750);
+            this.accountDetailsPanel.Size = new System.Drawing.Size(680, 392);
             this.accountDetailsPanel.TabIndex = 2;
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(538, 627);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(6);
+            this.btnSubmit.Location = new System.Drawing.Point(269, 326);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(308, 71);
+            this.btnSubmit.Size = new System.Drawing.Size(154, 37);
             this.btnSubmit.TabIndex = 5;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
@@ -97,21 +94,19 @@
             this.lblPin.BackColor = System.Drawing.Color.Transparent;
             this.lblPin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPin.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblPin.Location = new System.Drawing.Point(48, 412);
-            this.lblPin.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblPin.Location = new System.Drawing.Point(24, 214);
             this.lblPin.Name = "lblPin";
-            this.lblPin.Size = new System.Drawing.Size(279, 36);
+            this.lblPin.Size = new System.Drawing.Size(146, 18);
             this.lblPin.TabIndex = 4;
             this.lblPin.Text = "Enter Account PIN";
             // 
             // txtBoxPinNumber
             // 
             this.txtBoxPinNumber.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxPinNumber.Location = new System.Drawing.Point(406, 398);
-            this.txtBoxPinNumber.Margin = new System.Windows.Forms.Padding(6);
+            this.txtBoxPinNumber.Location = new System.Drawing.Point(203, 207);
             this.txtBoxPinNumber.Name = "txtBoxPinNumber";
             this.txtBoxPinNumber.PasswordChar = '*';
-            this.txtBoxPinNumber.Size = new System.Drawing.Size(572, 61);
+            this.txtBoxPinNumber.Size = new System.Drawing.Size(288, 34);
             this.txtBoxPinNumber.TabIndex = 3;
             // 
             // lblAccountNumber
@@ -120,21 +115,19 @@
             this.lblAccountNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblAccountNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAccountNumber.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAccountNumber.Location = new System.Drawing.Point(34, 287);
-            this.lblAccountNumber.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblAccountNumber.Location = new System.Drawing.Point(17, 149);
             this.lblAccountNumber.Name = "lblAccountNumber";
-            this.lblAccountNumber.Size = new System.Drawing.Size(337, 36);
+            this.lblAccountNumber.Size = new System.Drawing.Size(178, 18);
             this.lblAccountNumber.TabIndex = 2;
             this.lblAccountNumber.Text = "Enter Account Number";
             // 
             // txtboxEnterDetails
             // 
             this.txtboxEnterDetails.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxEnterDetails.Location = new System.Drawing.Point(444, 48);
-            this.txtboxEnterDetails.Margin = new System.Windows.Forms.Padding(6);
+            this.txtboxEnterDetails.Location = new System.Drawing.Point(222, 25);
             this.txtboxEnterDetails.Name = "txtboxEnterDetails";
             this.txtboxEnterDetails.ReadOnly = true;
-            this.txtboxEnterDetails.Size = new System.Drawing.Size(502, 61);
+            this.txtboxEnterDetails.Size = new System.Drawing.Size(253, 34);
             this.txtboxEnterDetails.TabIndex = 0;
             this.txtboxEnterDetails.Text = "Enter your Details";
             this.txtboxEnterDetails.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -142,11 +135,10 @@
             // txtboxBankingOptions
             // 
             this.txtboxBankingOptions.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxBankingOptions.Location = new System.Drawing.Point(476, 48);
-            this.txtboxBankingOptions.Margin = new System.Windows.Forms.Padding(6);
+            this.txtboxBankingOptions.Location = new System.Drawing.Point(238, 14);
             this.txtboxBankingOptions.Name = "txtboxBankingOptions";
             this.txtboxBankingOptions.ReadOnly = true;
-            this.txtboxBankingOptions.Size = new System.Drawing.Size(502, 61);
+            this.txtboxBankingOptions.Size = new System.Drawing.Size(253, 34);
             this.txtboxBankingOptions.TabIndex = 0;
             this.txtboxBankingOptions.Text = "Banking Options";
             this.txtboxBankingOptions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -155,10 +147,9 @@
             // 
             this.btnWithdraw.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnWithdraw.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWithdraw.Location = new System.Drawing.Point(342, 283);
-            this.btnWithdraw.Margin = new System.Windows.Forms.Padding(6);
+            this.btnWithdraw.Location = new System.Drawing.Point(3, 202);
             this.btnWithdraw.Name = "btnWithdraw";
-            this.btnWithdraw.Size = new System.Drawing.Size(300, 85);
+            this.btnWithdraw.Size = new System.Drawing.Size(214, 44);
             this.btnWithdraw.TabIndex = 1;
             this.btnWithdraw.Text = "Withdraw";
             this.btnWithdraw.UseVisualStyleBackColor = true;
@@ -167,10 +158,9 @@
             // btnReturnCard
             // 
             this.btnReturnCard.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturnCard.Location = new System.Drawing.Point(798, 285);
-            this.btnReturnCard.Margin = new System.Windows.Forms.Padding(6);
+            this.btnReturnCard.Location = new System.Drawing.Point(3, 135);
             this.btnReturnCard.Name = "btnReturnCard";
-            this.btnReturnCard.Size = new System.Drawing.Size(300, 85);
+            this.btnReturnCard.Size = new System.Drawing.Size(214, 44);
             this.btnReturnCard.TabIndex = 3;
             this.btnReturnCard.Text = "Return Card";
             this.btnReturnCard.UseVisualStyleBackColor = true;
@@ -179,37 +169,35 @@
             // textboxBalance
             // 
             this.textboxBalance.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxBalance.Location = new System.Drawing.Point(476, 148);
-            this.textboxBalance.Margin = new System.Windows.Forms.Padding(6);
+            this.textboxBalance.Location = new System.Drawing.Point(238, 77);
             this.textboxBalance.Name = "textboxBalance";
-            this.textboxBalance.Size = new System.Drawing.Size(502, 61);
+            this.textboxBalance.Size = new System.Drawing.Size(253, 34);
             this.textboxBalance.TabIndex = 4;
             this.textboxBalance.Text = "Current Balance : 100";
             this.textboxBalance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // withdrawPanel
             // 
-            this.withdrawPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("withdrawPanel.BackgroundImage")));
+            this.withdrawPanel.BackgroundImage = global::ATMSimulator.Properties.Resources.Gotham;
             this.withdrawPanel.Controls.Add(this.btnWithdraw500);
             this.withdrawPanel.Controls.Add(this.btnWithdraw200);
             this.withdrawPanel.Controls.Add(this.btnWithdraw100);
             this.withdrawPanel.Controls.Add(this.btnWithdraw50);
             this.withdrawPanel.Controls.Add(this.btnWithdraw20);
             this.withdrawPanel.Controls.Add(this.btnWithdraw10);
-            this.withdrawPanel.Location = new System.Drawing.Point(312, 444);
-            this.withdrawPanel.Margin = new System.Windows.Forms.Padding(6);
+            this.withdrawPanel.Location = new System.Drawing.Point(238, 160);
             this.withdrawPanel.Name = "withdrawPanel";
-            this.withdrawPanel.Size = new System.Drawing.Size(830, 296);
+            this.withdrawPanel.Size = new System.Drawing.Size(415, 127);
             this.withdrawPanel.TabIndex = 5;
             this.withdrawPanel.Visible = false;
+            this.withdrawPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.withdrawPanel_Paint);
             // 
             // btnWithdraw500
             // 
             this.btnWithdraw500.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWithdraw500.Location = new System.Drawing.Point(618, 144);
-            this.btnWithdraw500.Margin = new System.Windows.Forms.Padding(6);
+            this.btnWithdraw500.Location = new System.Drawing.Point(309, 75);
             this.btnWithdraw500.Name = "btnWithdraw500";
-            this.btnWithdraw500.Size = new System.Drawing.Size(168, 69);
+            this.btnWithdraw500.Size = new System.Drawing.Size(84, 36);
             this.btnWithdraw500.TabIndex = 11;
             this.btnWithdraw500.Text = "500";
             this.btnWithdraw500.UseVisualStyleBackColor = true;
@@ -218,10 +206,9 @@
             // btnWithdraw200
             // 
             this.btnWithdraw200.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWithdraw200.Location = new System.Drawing.Point(332, 144);
-            this.btnWithdraw200.Margin = new System.Windows.Forms.Padding(6);
+            this.btnWithdraw200.Location = new System.Drawing.Point(166, 75);
             this.btnWithdraw200.Name = "btnWithdraw200";
-            this.btnWithdraw200.Size = new System.Drawing.Size(168, 69);
+            this.btnWithdraw200.Size = new System.Drawing.Size(84, 36);
             this.btnWithdraw200.TabIndex = 10;
             this.btnWithdraw200.Text = "200";
             this.btnWithdraw200.UseVisualStyleBackColor = true;
@@ -230,10 +217,9 @@
             // btnWithdraw100
             // 
             this.btnWithdraw100.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWithdraw100.Location = new System.Drawing.Point(30, 144);
-            this.btnWithdraw100.Margin = new System.Windows.Forms.Padding(6);
+            this.btnWithdraw100.Location = new System.Drawing.Point(15, 75);
             this.btnWithdraw100.Name = "btnWithdraw100";
-            this.btnWithdraw100.Size = new System.Drawing.Size(168, 69);
+            this.btnWithdraw100.Size = new System.Drawing.Size(84, 36);
             this.btnWithdraw100.TabIndex = 9;
             this.btnWithdraw100.Text = "100";
             this.btnWithdraw100.UseVisualStyleBackColor = true;
@@ -242,10 +228,9 @@
             // btnWithdraw50
             // 
             this.btnWithdraw50.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWithdraw50.Location = new System.Drawing.Point(618, 19);
-            this.btnWithdraw50.Margin = new System.Windows.Forms.Padding(6);
+            this.btnWithdraw50.Location = new System.Drawing.Point(309, 10);
             this.btnWithdraw50.Name = "btnWithdraw50";
-            this.btnWithdraw50.Size = new System.Drawing.Size(168, 69);
+            this.btnWithdraw50.Size = new System.Drawing.Size(84, 36);
             this.btnWithdraw50.TabIndex = 8;
             this.btnWithdraw50.Text = "50";
             this.btnWithdraw50.UseVisualStyleBackColor = true;
@@ -254,10 +239,9 @@
             // btnWithdraw20
             // 
             this.btnWithdraw20.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWithdraw20.Location = new System.Drawing.Point(332, 19);
-            this.btnWithdraw20.Margin = new System.Windows.Forms.Padding(6);
+            this.btnWithdraw20.Location = new System.Drawing.Point(166, 10);
             this.btnWithdraw20.Name = "btnWithdraw20";
-            this.btnWithdraw20.Size = new System.Drawing.Size(168, 69);
+            this.btnWithdraw20.Size = new System.Drawing.Size(84, 36);
             this.btnWithdraw20.TabIndex = 7;
             this.btnWithdraw20.Text = "20";
             this.btnWithdraw20.UseVisualStyleBackColor = true;
@@ -266,10 +250,9 @@
             // btnWithdraw10
             // 
             this.btnWithdraw10.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWithdraw10.Location = new System.Drawing.Point(30, 19);
-            this.btnWithdraw10.Margin = new System.Windows.Forms.Padding(6);
+            this.btnWithdraw10.Location = new System.Drawing.Point(15, 10);
             this.btnWithdraw10.Name = "btnWithdraw10";
-            this.btnWithdraw10.Size = new System.Drawing.Size(168, 69);
+            this.btnWithdraw10.Size = new System.Drawing.Size(84, 36);
             this.btnWithdraw10.TabIndex = 6;
             this.btnWithdraw10.Text = "10";
             this.btnWithdraw10.UseVisualStyleBackColor = true;
@@ -285,10 +268,9 @@
             this.bankOptionsPanel.Controls.Add(this.btnReturnCard);
             this.bankOptionsPanel.Controls.Add(this.btnWithdraw);
             this.bankOptionsPanel.Controls.Add(this.txtboxBankingOptions);
-            this.bankOptionsPanel.Location = new System.Drawing.Point(134, 50);
-            this.bankOptionsPanel.Margin = new System.Windows.Forms.Padding(6);
+            this.bankOptionsPanel.Location = new System.Drawing.Point(60, 29);
             this.bankOptionsPanel.Name = "bankOptionsPanel";
-            this.bankOptionsPanel.Size = new System.Drawing.Size(1330, 754);
+            this.bankOptionsPanel.Size = new System.Drawing.Size(675, 398);
             this.bankOptionsPanel.TabIndex = 6;
             this.bankOptionsPanel.Visible = false;
             // 
@@ -296,24 +278,22 @@
             // 
             this.lblLastTransaction.AutoSize = true;
             this.lblLastTransaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastTransaction.Location = new System.Drawing.Point(534, 392);
-            this.lblLastTransaction.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblLastTransaction.Location = new System.Drawing.Point(226, 356);
             this.lblLastTransaction.Name = "lblLastTransaction";
-            this.lblLastTransaction.Size = new System.Drawing.Size(363, 36);
+            this.lblLastTransaction.Size = new System.Drawing.Size(194, 18);
             this.lblLastTransaction.TabIndex = 6;
             this.lblLastTransaction.Text = "Last Transaction : None ";
             this.lblLastTransaction.UseWaitCursor = true;
             // 
             // SimulatorOptions
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ATMSimulator.Properties.Resources.Gotham;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.ClientSize = new System.Drawing.Size(787, 448);
             this.Controls.Add(this.bankOptionsPanel);
             this.Controls.Add(this.accountDetailsPanel);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "SimulatorOptions";
             this.accountDetailsPanel.ResumeLayout(false);
             this.accountDetailsPanel.PerformLayout();
