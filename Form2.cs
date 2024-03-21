@@ -11,6 +11,7 @@ using System.Media;
 using System.Threading;
 using System.Diagnostics;
 
+
 namespace ATMSimulator
 {
     public partial class SimulatorOptions : Form
@@ -20,10 +21,12 @@ namespace ATMSimulator
         static Mutex useMutex = new Mutex();
         bool isRace;
 
-        public SimulatorOptions(ATMProgram program , bool isRace)
+        public SimulatorOptions(ATMProgram program, bool isRace)
         {
             this.atmProgram = program;
             InitializeComponent();
+            accountDetailsPanel.Visible = true;
+            richTextBox1.AppendText("Please enter your account number");
             this.isRace = isRace;
             foreach (Account acc in atmProgram.getAllAccounts())
             {
@@ -77,6 +80,9 @@ namespace ATMSimulator
         private void btnWithdrawClick(object sender, EventArgs e)
         {
             withdrawPanel.Visible = !withdrawPanel.Visible;
+            richTextBox1.Clear();
+            richTextBox1.AppendText("How much money would you like to deposit?");
+
         }
 
         private void bntWithdraw10Click(object sender, EventArgs e)
@@ -111,52 +117,196 @@ namespace ATMSimulator
         private void btnSubmitClick(object sender, EventArgs e)
         {
             int userAccNum;
-            int userAccPin;
 
-            string inputUserAccNum = txtBoxAccountNumber.Text;
-            string inputUserAccPin = txtBoxPinNumber.Text;
+            string inputUserAccNum = txtBox.Text;
 
-            if(string.IsNullOrEmpty(inputUserAccNum) || string.IsNullOrEmpty(inputUserAccPin))
+
+            if (string.IsNullOrEmpty(inputUserAccNum))
             {
-                txtboxEnterDetails.Text = "* Complete All Fields *";
+                richTextBox1.Clear();
+                richTextBox1.AppendText("Please enter your account number");
+                richTextBox1.AppendText(Environment.NewLine + "* COMLPETE ALL FIELDS *");
                 return;
             }
 
-            if(!int.TryParse(inputUserAccNum, out userAccNum) ) {
-                txtboxEnterDetails.Text = "* Invalid Details *";
-                return;
-            }
-            if (!int.TryParse(inputUserAccPin, out userAccPin))
+            if (!int.TryParse(inputUserAccNum, out userAccNum))
             {
-                txtboxEnterDetails.Text = "* Invalid Details *";
+                richTextBox1.Clear();
+                richTextBox1.AppendText("Please enter your account number");
+                richTextBox1.AppendText(Environment.NewLine + "* INVALID DETAILS *");
                 return;
             }
 
             userAccount = atmProgram.findAccount(userAccNum);
-            if(userAccount != null) {
-                if (userAccount.checkPin(userAccPin))
-                {
-                    accountDetailsPanel.Visible = false;
-                    bankOptionsPanel.Visible = true;
-                    textboxBalance.Text = "Current Balance:  " + userAccount.getBalance().ToString();
-                }
-                else
-                {
-                    txtboxEnterDetails.Text = "* Incorrect Details *";
-                    return;
-                }
-            } else
+            if (userAccount != null)
             {
-                txtboxEnterDetails.Text = "* Incorrect Details *";
+
+                richTextBox1.AppendText("* Please Enter Pin *");
+                AccountNumber.AppendText(inputUserAccNum);
+                txtBox.Clear();
+                btnSubmit.Visible = false;
+                btnSubmitPin.Visible = true;
+            }
+            else
+            {
+                richTextBox1.Clear();
+                richTextBox1.AppendText("Please enter your pin number");
+                richTextBox1.AppendText(Environment.NewLine + "* INVALID DETAILS *");
+                return;
             }
         }
+
+        private void btnSubmitClickPin(object sender, EventArgs e)
+        {
+            int userAccPin;
+            int userAccNum;
+
+            string inputUserAccNum = AccountNumber.Text;
+            string inputUserAccPin = txtBox.Text;
+
+            if (string.IsNullOrEmpty(inputUserAccPin))
+            {
+                richTextBox1.Clear();
+                richTextBox1.AppendText("Please enter your pin number");
+                richTextBox1.AppendText(Environment.NewLine + "* COMPLETE ALL FIELDS *");
+                return;
+            }
+
+            if (!int.TryParse(inputUserAccNum, out userAccNum))
+            {
+                return;
+            }
+            if (!int.TryParse(inputUserAccPin, out userAccPin))
+            {
+                richTextBox1.Clear();
+                richTextBox1.AppendText("Please enter your pin number");
+                richTextBox1.AppendText(Environment.NewLine + "* INVALID DETAILS *");
+                return;
+            }
+
+            userAccount = atmProgram.findAccount(userAccNum);
+
+            if (userAccount.checkPin(userAccPin))
+            {
+                bankOptionsPanel.Visible = true;
+                textboxBalance.Text = "Current Balance:  " + userAccount.getBalance().ToString();
+            }
+            else
+            {
+                richTextBox1.Clear();
+                richTextBox1.AppendText("Please enter your pin number");
+                richTextBox1.AppendText(Environment.NewLine + "* INVALID DETAILS *");
+                return;
+            }
+        }
+
 
         private void btnReturnCardClick(object sender, EventArgs e)
         {
             bankOptionsPanel.Visible = false;
-            accountDetailsPanel.Visible= true;
-            txtBoxAccountNumber.Text = "";
-            txtBoxPinNumber.Text = "";
+            accountDetailsPanel.Visible = true;
+            richTextBox1.AppendText("Please enter your account number");
+
+        }
+
+        private void txtboxEnterDetails_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClearClick(object sender, EventArgs e)
+        {
+            txtBox.Clear();
+        }
+
+        private void Btn1Click(object sender, EventArgs e)
+        {
+            txtBox.Text += "1";
+        }
+
+        private void Btn2Click(object sender, EventArgs e)
+        {
+            txtBox.Text += "2";
+        }
+
+        private void Btn3Click(object sender, EventArgs e)
+        {
+            txtBox.Text += "3";
+        }
+
+        private void Btn4Click(object sender, EventArgs e)
+        {
+            txtBox.Text += "4";
+        }
+
+        private void Btn5Click(object sender, EventArgs e)
+        {
+            txtBox.Text += "5";
+        }
+
+        private void Btn6Click(object sender, EventArgs e)
+        {
+            txtBox.Text += "6";
+        }
+
+        private void Btn7Click(object sender, EventArgs e)
+        {
+            txtBox.Text += "7";
+        }
+
+        private void Btn8Click(object sender, EventArgs e)
+        {
+            txtBox.Text += "8";
+        }
+
+        private void Btn9Click(object sender, EventArgs e)
+        {
+            txtBox.Text += "9";
+        }
+
+        private void Btn0Click(object sender, EventArgs e)
+        {
+            txtBox.Text += "0";
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SimulatorOptions_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLastTransaction_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void withdrawPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
